@@ -49,6 +49,23 @@ struct PodKeepAliveView: View {
 
     private var refreshTypeSection: some View {
         Section {
+            VStack(alignment: .center, spacing: 4) {
+                Text("Only use with iPhone 16 and InPlay BLE (Atlas) Pods\nOtherwise select Disabled", comment: "Summary of hardware which benefits from Pod Keep Alive")
+                    .font(.body)
+                    .fontWeight(.bold)
+                    .foregroundColor(.primary)
+            }
+            VStack(alignment: .leading, spacing: 4) {
+                Text("When enabled and pod is within range, extra messages are sent to the pod to prevent pod dropping Bluetooth connection", comment: "Summary of the Keep Alive concept")
+                    .font(.body)
+                    .foregroundColor(.primary)
+            }
+            VStack(alignment: .leading, spacing: 4) {
+                Text("**Disabled**: pod disconnects 3 minutes after last message exchange (nominal behavior)\n**When Open**: only works when app is in the foreground with phone unlocked (extra message sent at 165 sec)\n**Silent Tune**: uses phone battery and can fail when phone is locked and busy (extra message sent at 165 sec)\n**RileyLink** requires additional hardware and sends pod messages more frequently (extra message sent at 120 sec)", comment: "Overview of the 4 types of Pod Keep Alive settings")
+                    .font(.body)
+                    .foregroundColor(.primary)
+            }
+
             Picker("Pod Keep Alive", selection: $viewModel.podKeepAlive) {
                 ForEach(PodKeepAlive.allCases, id: \.self) { type in
                     Text(type.title).tag(type)
