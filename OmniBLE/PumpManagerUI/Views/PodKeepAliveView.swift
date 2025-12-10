@@ -55,13 +55,9 @@ struct PodKeepAliveView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.primary)
             }
+
             VStack(alignment: .leading, spacing: 4) {
                 Text("When enabled and pod is within range, extra messages are sent to the pod to prevent pod dropping Bluetooth connection", comment: "Summary of the Keep Alive concept")
-                    .font(.body)
-                    .foregroundColor(.primary)
-            }
-            VStack(alignment: .leading, spacing: 4) {
-                Text("**Disabled**: pod disconnects 3 minutes after last message exchange (nominal behavior)\n**When Open**: only works when app is in the foreground with phone unlocked (extra message sent at 165 sec)\n**Silent Tune**: uses phone battery and can fail when phone is locked and busy (extra message sent at 165 sec)\n**RileyLink** requires additional hardware and sends pod messages more frequently (extra message sent at 120 sec)", comment: "Overview of the 4 types of Pod Keep Alive settings")
                     .font(.body)
                     .foregroundColor(.primary)
             }
@@ -272,13 +268,13 @@ enum PodKeepAlive: Int, CaseIterable, Codable {
     var description: String {
         switch self {
         case .disabled:
-            return LocalizedString("Pod keep alives disabled.", comment: "Description for PodKeepAlive.disabled")
+            return LocalizedString("Pod keep alive disabled. Pod disconnects 3 minutes after last message exchange (nominal behavior)", comment: "Description for PodKeepAlive.disabled")
         case .whenOpen:
-            return LocalizedString("Pod keep alives will be sent when app is open.", comment: "Description for PodKeepAlive.whenOpen")
+            return LocalizedString("Pod keep alive enabled when app is in the foreground with phone unlocked (extra message sent at 165 sec)", comment: "Description for PodKeepAlive.whenOpen")
         case .silentTune:
-            return LocalizedString("A silent tune will play in the background, keeping the app active. May be interrupted by other apps. Allows for pod keep alives when app is background, but consumes more iPhone battery.", comment: "Description for PodKeepAlive.silentTune")
+            return LocalizedString("Pod keep alive enabled (extra message sent at 165 sec).\n\nAttempt to maintain this even when phone is locked using a silent tune playing in the background. May be interrupted by other apps. Consumes extra iPhone battery.", comment: "Description for PodKeepAlive.silentTune")
         case .rileyLink:
-            return LocalizedString("Requires a RileyLink-compatible device within Bluetooth range. Allows pod keep alives when app is in background and uses less iPhone battery and slightly more DASH battery than the silent tune method. The RileyLink-compatible device must be the selected and be connected.", comment: "Description for PodKeepAlive.rileyLink")
+            return LocalizedString("Pod keep alive enabled (extra message sent at 120 sec).\n\nRequires a RileyLink-compatible device within Bluetooth range. Allows pod keep alive messages when app is in background; uses less iPhone battery and slightly more DASH battery than the Silent Tune method. The RileyLink-compatible device must be selected and be connected.", comment: "Description for PodKeepAlive.rileyLink")
         }
     }
 
