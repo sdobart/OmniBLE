@@ -50,14 +50,14 @@ struct PodKeepAliveView: View {
     private var refreshTypeSection: some View {
         Section {
             VStack(alignment: .center, spacing: 4) {
-                Text("Only use with iPhone 16 and InPlay BLE (Atlas) Pods\nOtherwise select Disabled", comment: "Summary of hardware which benefits from Pod Keep Alive")
+                Text("For use with iPhone 16 and InPlay BLE (Atlas) pods; otherwise leave disabled.", comment: "Hardware which benefits from Pod Keep Alive")
                     .font(.body)
                     .fontWeight(.bold)
                     .foregroundColor(.primary)
             }
 
             VStack(alignment: .leading, spacing: 4) {
-                Text("When enabled and pod is within range, extra messages are sent to the pod to prevent pod dropping Bluetooth connection", comment: "Summary of the Keep Alive concept")
+                Text("When enabled and pod is within range, additional pod status requests are issued to minimize pod Bluetooth disconnects.", comment: "Summary of the Pod Keep Alive concept")
                     .font(.body)
                     .foregroundColor(.primary)
             }
@@ -268,13 +268,13 @@ enum PodKeepAlive: Int, CaseIterable, Codable {
     var description: String {
         switch self {
         case .disabled:
-            return LocalizedString("Pod keep alive disabled. Pod disconnects 3 minutes after last message exchange (nominal behavior)", comment: "Description for PodKeepAlive.disabled")
+            return LocalizedString("Pod keep alive disabled. Pod disconnects 3 minutes after last message exchange (nominal behavior).", comment: "Description for PodKeepAlive.disabled")
         case .whenOpen:
-            return LocalizedString("Pod keep alive enabled when app is in the foreground with phone unlocked (extra message sent at 165 sec)", comment: "Description for PodKeepAlive.whenOpen")
+            return LocalizedString("Pod keep alive enabled when app is in the foreground with phone unlocked. Additional pod status request issued after 165 seconds.", comment: "Description for PodKeepAlive.whenOpen")
         case .silentTune:
-            return LocalizedString("Pod keep alive enabled (extra message sent at 165 sec).\n\nAttempt to maintain this even when phone is locked using a silent tune playing in the background. May be interrupted by other apps. Consumes extra iPhone battery.", comment: "Description for PodKeepAlive.silentTune")
+            return LocalizedString("Pod keep alive enabled. Additional pod status request issued after 165 seconds.\n\nAttempt to keep pod connected even when phone is locked by using a silent tune playing in the background. The silent tune may be interrupted by other apps. If silent tune is interrupted, pod keep alive stops working. The silent tune consumes extra iPhone battery.", comment: "Description for PodKeepAlive.silentTune")
         case .rileyLink:
-            return LocalizedString("Pod keep alive enabled (extra message sent at 120 sec).\n\nRequires a RileyLink-compatible device within Bluetooth range. Allows pod keep alive messages when app is in background; uses less iPhone battery and slightly more DASH battery than the Silent Tune method. The RileyLink-compatible device must be selected and be connected.", comment: "Description for PodKeepAlive.rileyLink")
+            return LocalizedString("Pod keep alive enabled. Additional pod status request issued after 2 minutes.\n\nRequires a RileyLink-compatible device within Bluetooth range. Allows pod keep alive messages when app is in background. This method uses less iPhone battery and slightly more DASH battery than the Silent Tune method. The RileyLink-compatible device must be selected and be connected.", comment: "Description for PodKeepAlive.rileyLink")
         }
     }
 
