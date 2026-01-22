@@ -942,10 +942,11 @@ extension OmniBLEPumpManager {
 
                         if self.usingInPlayPod == true && self.iPhoneWithPossibleInPlayIssues {
                             if Storage.shared.podKeepAlive.value == .disabled {
-                                // Enable the most conservative pod keep alive mode
-                                // that should work through the for pod setup process.
-                                self.log.debug("@@@ Enabling pod keep alives")
-                                Storage.shared.podKeepAlive.value = .whenOpen
+                                // Enable hybrid mode which balances battery life and connectivity:
+                                // - When charging: uses silent tune for background keep alive
+                                // - When not charging: only keeps alive in foreground (like When Open)
+                                self.log.debug("@@@ Enabling pod keep alives (hybrid mode)")
+                                Storage.shared.podKeepAlive.value = .hybrid
                             }
                         }
                         // Calls completion

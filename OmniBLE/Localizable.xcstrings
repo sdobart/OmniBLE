@@ -21201,6 +21201,9 @@
         }
       }
     },
+    "Hybrid" : {
+      "comment" : "Title string for PodKeepAlive.hybrid"
+    },
     "If you cancel Pod setup, the current Pod will be deactivated and will be unusable." : {
       "comment" : "Alert message body for confirm pod attachment",
       "localizations" : {
@@ -39236,6 +39239,9 @@
     },
     "Pod keep alive enabled. Additional pod status request issued after 165 seconds.\n\nAttempt to keep pod connected even when phone is locked by using a silent tune playing in the background. The silent tune may be interrupted by other apps. If silent tune is interrupted, pod keep alive stops working. The silent tune consumes extra iPhone battery." : {
       "comment" : "Description for PodKeepAlive.silentTune"
+    },
+    "Pod keep alive enabled. Additional pod status request issued after 165 seconds.\n\nWhen device is plugged in and charging, uses silent tune to keep pod connected in background. When not charging, pod keep alive only works when app is in foreground (like When Open mode). This saves battery when unplugged while maintaining connectivity when power is available." : {
+      "comment" : "Description for PodKeepAlive.hybrid"
     },
     "Pod not connected" : {
       "comment" : "Error message shown when the pod is not connected.",

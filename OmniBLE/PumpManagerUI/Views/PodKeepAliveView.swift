@@ -219,7 +219,7 @@ class PodKeepAliveViewModel: ObservableObject {
         }
 
         switch newValue {
-        case .silentTune, .whenOpen:
+        case .silentTune, .whenOpen, .hybrid:
             /// Setup a refreshTimer to try to prevent a possible pod disconnect
             /// pod disconnect if no pod comms are done in the remaining window.
             print("handlePodKeepAliveChange: initializing refresh timer for \(refreshInterval.timeIntervalStr) with refreshTimeTarget \(timeStr(refreshTimeTarget))")
@@ -236,7 +236,7 @@ class PodKeepAliveViewModel: ObservableObject {
             break
         }
 
-        if oldValue == .silentTune || newValue == .disabled {
+        if oldValue == .silentTune || oldValue == .hybrid || newValue == .disabled {
             print("handlePodKeepAliveChange: stopping background task")
             BackgroundTask.shared.stopBackgroundTask()
         }
@@ -250,6 +250,7 @@ enum PodKeepAlive: Int, CaseIterable, Codable {
     case disabled
     case whenOpen
     case silentTune
+    case hybrid
     case rileyLink
 
     var title: String {
@@ -260,6 +261,8 @@ enum PodKeepAlive: Int, CaseIterable, Codable {
             return LocalizedString("When Open", comment: "Title string for PodKeepAlive.whenOpen")
         case .silentTune:
             return LocalizedString("Silent Tune", comment: "Title string for PodKeepAlive.silentTune")
+        case .hybrid:
+            return LocalizedString("Hybrid", comment: "Title string for PodKeepAlive.hybrid")
         case .rileyLink:
             return LocalizedString("RileyLink", comment: "Title string for PodKeepAlive.rileyLink")
         }
@@ -273,6 +276,8 @@ enum PodKeepAlive: Int, CaseIterable, Codable {
             return LocalizedString("Pod keep alive enabled when app is in the foreground with phone unlocked. Additional pod status request issued after 165 seconds.", comment: "Description for PodKeepAlive.whenOpen")
         case .silentTune:
             return LocalizedString("Pod keep alive enabled. Additional pod status request issued after 165 seconds.\n\nAttempt to keep pod connected even when phone is locked by using a silent tune playing in the background. The silent tune may be interrupted by other apps. If silent tune is interrupted, pod keep alive stops working. The silent tune consumes extra iPhone battery.", comment: "Description for PodKeepAlive.silentTune")
+        case .hybrid:
+            return LocalizedString("Pod keep alive enabled. Additional pod status request issued after 165 seconds.\n\nWhen device is plugged in and charging, uses silent tune to keep pod connected in background. When not charging, pod keep alive only works when app is in foreground (like When Open mode). This saves battery when unplugged while maintaining connectivity when power is available.", comment: "Description for PodKeepAlive.hybrid")
         case .rileyLink:
             return LocalizedString("Pod keep alive enabled. Additional pod status request issued after 2 minutes.\n\nRequires a RileyLink-compatible device within Bluetooth range. Allows pod keep alive messages when app is in background. This method uses less iPhone battery and slightly more DASH battery than the Silent Tune method. The RileyLink-compatible device must be selected and be connected.", comment: "Description for PodKeepAlive.rileyLink")
         }
@@ -283,7 +288,7 @@ enum PodKeepAlive: Int, CaseIterable, Codable {
         switch self {
         case .rileyLink:
             return true
-        case .disabled, .whenOpen, .silentTune:
+        case .disabled, .whenOpen, .silentTune, .hybrid:
             return false
         }
     }
@@ -317,7 +322,7 @@ enum PodKeepAlive: Int, CaseIterable, Codable {
             }
             return false
 
-        case .disabled, .whenOpen, .silentTune:
+        case .disabled, .whenOpen, .silentTune, .hybrid:
             return false
         }
     }
@@ -382,6 +387,7 @@ class StorageValue<T: Codable & Equatable>: ObservableObject {
 
 
 import AVFoundation
+import UIKit
 
 class BackgroundTask {
     // MARK: - Vars
@@ -389,29 +395,99 @@ class BackgroundTask {
     static let shared = BackgroundTask()
 
     var player = AVAudioPlayer()
+    
+    /// Tracks whether we have an active pod for hybrid mode battery state changes
+    private var hasPodForHybrid: Bool = false
+
+    // MARK: - Initialization
+    
+    init() {
+        // Enable battery monitoring for hybrid mode
+        UIDevice.current.isBatteryMonitoringEnabled = true
+        
+        // Observe battery state changes for hybrid mode
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(batteryStateDidChange),
+            name: UIDevice.batteryStateDidChangeNotification,
+            object: nil
+        )
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIDevice.batteryStateDidChangeNotification, object: nil)
+    }
 
     // MARK: - Methods
+    
+    /// Returns true if the device is currently charging or fully charged
+    func isDeviceCharging() -> Bool {
+        let batteryState = UIDevice.current.batteryState
+        return batteryState == .charging || batteryState == .full
+    }
 
     func startBackgroundTask(hasPod: Bool) {
         Storage.shared.inBackground.value = true
-        if hasPod && Storage.shared.podKeepAlive.value == .silentTune {
-            print("@@@ Starting silent audio")
+        hasPodForHybrid = hasPod
+        
+        let podKeepAlive = Storage.shared.podKeepAlive.value
+        
+        if hasPod && podKeepAlive == .silentTune {
+            print("@@@ Starting silent audio (Silent Tune mode)")
             NotificationCenter.default.addObserver(self, selector: #selector(interruptedAudio), name: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance())
             playAudio()
+        } else if hasPod && podKeepAlive == .hybrid {
+            // Hybrid mode: only play audio if device is charging
+            if isDeviceCharging() {
+                print("@@@ Starting silent audio (Hybrid mode - device is charging)")
+                NotificationCenter.default.addObserver(self, selector: #selector(interruptedAudio), name: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance())
+                playAudio()
+            } else {
+                print("@@@ Hybrid mode - device not charging, skipping silent audio (foreground-only behavior)")
+            }
         }
     }
 
     func stopBackgroundTask() {
         Storage.shared.inBackground.value = false
+        hasPodForHybrid = false
         print("@@@ Stopping silent audio")
         NotificationCenter.default.removeObserver(self, name: AVAudioSession.interruptionNotification, object: nil)
         player.stop()
     }
+    
+    /// Called when the device's charging state changes
+    @objc private func batteryStateDidChange(_ notification: Notification) {
+        let podKeepAlive = Storage.shared.podKeepAlive.value
+        let inBackground = Storage.shared.inBackground.value
+        
+        // Only respond to battery state changes in hybrid mode while in background with a pod
+        guard podKeepAlive == .hybrid && inBackground && hasPodForHybrid else {
+            return
+        }
+        
+        if isDeviceCharging() {
+            // Device was plugged in - start silent audio if not already playing
+            if !player.isPlaying {
+                print("@@@ Hybrid mode - device plugged in while in background, starting silent audio")
+                NotificationCenter.default.addObserver(self, selector: #selector(interruptedAudio), name: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance())
+                playAudio()
+            }
+        } else {
+            // Device was unplugged - stop silent audio
+            if player.isPlaying {
+                print("@@@ Hybrid mode - device unplugged while in background, stopping silent audio")
+                NotificationCenter.default.removeObserver(self, name: AVAudioSession.interruptionNotification, object: nil)
+                player.stop()
+            }
+        }
+    }
 
     @objc fileprivate func interruptedAudio(_ notification: Notification) {
         print("@@@ interruptedAudio: silent audio interrupted")
+        let podKeepAlive = Storage.shared.podKeepAlive.value
         if notification.name == AVAudioSession.interruptionNotification, notification.userInfo != nil,
-           Storage.shared.podKeepAlive.value == .silentTune
+           (podKeepAlive == .silentTune || (podKeepAlive == .hybrid && isDeviceCharging()))
         {
             let info = notification.userInfo!
             var intValue = 0
@@ -524,7 +600,7 @@ class BLEManager: NSObject, ObservableObject {
                 activeDevice = OmnipodDashHeartbeatBluetoothTransmitter(address: device.id.uuidString, name: device.name, bluetoothDeviceDelegate: self)
                 activeDevice?.connect()
 #endif
-            case .silentTune, .whenOpen, .disabled:
+            case .silentTune, .whenOpen, .hybrid, .disabled:
                 return
             }
         } else {
@@ -1246,7 +1322,7 @@ func podKeepAliveSetup(refresh: @escaping () -> Void) {
     /// such as when first selecting OmniBLE pump type, right after pairing
     /// and pod type is known, or any app restart issues.
     switch podKeepAlive {
-    case .silentTune:
+    case .silentTune, .hybrid:
         /// Shouldn't need to start the silent tune now as we should be in foreground
         /// BackgroundTask.shared.startBackgroundTask()
         break
@@ -1275,7 +1351,7 @@ fileprivate func timeStr(_ when: Date) -> String {
 fileprivate var refreshTimer: Timer?
 
 /// Manages private refreshTimer to implement pod keep alives
-/// when in foreground, playing a silent tune, or under Xcode.
+/// when in foreground, playing a silent tune, hybrid mode, or under Xcode.
 func setup_refreshTimer(when: TimeInterval) {
     // The following code implements a timer to trigger a refresh
     // after refreshTimerInterval seconds has past since the last response,
