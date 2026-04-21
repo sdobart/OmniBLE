@@ -227,7 +227,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\n\n⚠️ Eroare critică a podului %1$03d (0x %2$02X )"
+            "value" : "\n\n⚠️ Eroare critică a pompei %1$03d (0x %2$02X )"
           }
         },
         "ru" : {
@@ -2603,7 +2603,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : " (inactive)"
           }
         },
@@ -2651,7 +2651,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : " (inactive)"
           }
         },
@@ -2699,7 +2699,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : " (inactive)"
           }
         }
@@ -3315,7 +3315,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%@U"
           }
         },
@@ -3351,13 +3351,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%@U"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%@U"
           }
         },
@@ -3393,7 +3393,13 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
+            "value" : "%@U"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
             "value" : "%@U"
           }
         },
@@ -3435,7 +3441,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%@U"
           }
         }
@@ -3680,7 +3686,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ nu a putut comunica cu pompa de pe corpul dumneavoastră din %2$@. \n \nNu înlăturați pompal fără a derula pentru a citi întregul ecran. \n \nComunicarea a fost întreruptă într-un moment critic. Informațiile despre insulina activă / rata bazală temporară ale pompei sunt incerte. \n \nPuteți dezactiva și activa Bluetooth-ul telefonului sau puteți închide și reporni aplicația. (Așteptați până la 30 de secunde pentru recuperare.) \n \nDacă decideți să renunțați deoarece comunicarea nu poate fi restabilită, atingeți butonul Înlăturați pompa, urmați pașii și porniți o pompă nouă. \nMonitorizați-vă cu atenție glicemia pentru  următoarele 6 ore, deoarece este posibil să existe sau nu insulină care acționează activ în corpul dumneavoastră și pe care %3$@ nu o poate afișa."
+            "value" : "%1$@ nu a putut comunica cu pompa de pe corpul dumneavoastră din %2$@. \n \nNu înlăturați pompa fără a derula pentru a citi întregul ecran. \n \nComunicarea a fost întreruptă într-un moment critic. Informațiile despre insulina activă / rata bazală temporară ale pompei sunt incerte. \n \nPuteți dezactiva și activa Bluetooth-ul telefonului sau puteți închide și reporni aplicația. (Așteptați până la 30 de secunde pentru recuperare.) \n \nDacă decideți să renunțați deoarece comunicarea nu poate fi restabilită, atingeți butonul Înlăturați pompa, urmați pașii și porniți o pompă nouă. \nMonitorizați-vă cu atenție glicemia pentru  următoarele 6 ore, deoarece este posibil să existe sau nu insulină care acționează activ în corpul dumneavoastră și pe care %3$@ nu o poate afișa."
           }
         },
         "ru" : {
@@ -3966,7 +3972,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ de insulină sau mai puțin rămase în Pod. Schimbați Pod-ul în curând."
+            "value" : "%1$@ de insulină sau mai puțin rămase în pompă. Schimbați pompa în curând."
           }
         },
         "ru" : {
@@ -4161,7 +4167,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ units remaining at %2$@"
           }
         },
@@ -4197,13 +4203,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ units remaining at %2$@"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ units remaining at %2$@"
           }
         },
@@ -4241,6 +4247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ unidades restantes em %2$@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ unități rămase la %2$@"
           }
         },
         "ru" : {
@@ -4281,7 +4293,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ units remaining at %2$@"
           }
         }
@@ -5306,7 +5318,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A reminder is configured during Pod setup to notify you in advance of Pod expiration. Set the number of hours advance notice you would like to configure by default when pairing a new Pod."
+            "value" : "Während der Einrichtung des Pods wird eine Erinnerung konfiguriert, die vor Ablauf des Pods benachrichtigt. Lege fest, wie viele Stunden im Voraus du standardmäßig benachrichtigt werden möchtest, wenn du einen neuen Pod koppelst."
           }
         },
         "es" : {
@@ -5360,7 +5372,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "iAPS configureert melding op de Pod om je op de hoogte te stellen wanneer de Pod verloopt. Stel het aantal uren vooraf in dat je standaard wilt instellen als je een nieuwe Pod koppelt."
+            "value" : "OS-AID configureert melding op de Pod om je op de hoogte te stellen wanneer de Pod verloopt. Stel het aantal uren vooraf in dat je standaard wilt instellen als je een nieuwe Pod koppelt."
           }
         },
         "pl" : {
@@ -5472,7 +5484,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Activation time exceeded"
           }
         },
@@ -5520,7 +5532,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Activation time exceeded"
           }
         },
@@ -5568,7 +5580,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Activation time exceeded"
           }
         }
@@ -6111,7 +6123,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Toate alertele pompei sunt fără semnale sonore, iar notificările de confirmare sunt suprimate. Pompa va emite semnale sonore doar în cazul erorilor grave de pompă și atunci când se redau semnale sonore de test. \n \n ⚠️Atenție - Dacă telefonul dvs. este în afara razei de acțiune a pompei în timp ce această funcție este activată, nu veți primi nicio notificare în aplicație; iar pompa nu va emite semnale sonore pentru a vă alerta."
+            "value" : "Toate alertele pompei sunt fără semnale sonore, iar notificările de confirmare sunt suprimate. Pompa va emite semnale sonore doar în cazul erorilor grave de pompă și atunci când se redau semnale sonore de test. \n \n ⚠️Atenție - Dacă telefonul dumneavoastră este în afara razei de acțiune a pompei în timp ce această funcție este activată, nu veți primi nicio notificare în aplicație; iar pompa nu va emite semnale sonore pentru a vă alerta."
           }
         },
         "ru" : {
@@ -6254,7 +6266,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sigur doriți să anulați configurarea Pod-ului?"
+            "value" : "Sigur vreți să anulați configurarea pompei?"
           }
         },
         "ru" : {
@@ -6682,7 +6694,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Atașați Pod-ul"
+            "value" : "Atașați pompa"
           }
         },
         "ru" : {
@@ -6877,7 +6889,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Auto-off"
           }
         },
@@ -6901,7 +6913,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Auto-off"
           }
         },
@@ -6913,7 +6925,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Auto-off"
           }
         },
@@ -6961,7 +6973,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Auto-off"
           }
         },
@@ -7009,7 +7021,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Auto-off"
           }
         }
@@ -7124,7 +7136,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alarmă Auto-off"
+            "value" : "Alarmă cu oprire automată"
           }
         },
         "ru" : {
@@ -7367,7 +7379,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Basal initialized"
           }
         },
@@ -7415,7 +7427,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Basal initialized"
           }
         },
@@ -7463,7 +7475,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Basal initialized"
           }
         }
@@ -8673,7 +8685,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Bolus"
           }
         },
@@ -8703,7 +8715,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Bolus"
           }
         },
@@ -8715,7 +8727,13 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
+            "value" : "Bolus"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
             "value" : "Bolus"
           }
         },
@@ -8739,7 +8757,7 @@
         },
         "tr" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Bolus"
           }
         },
@@ -10982,7 +11000,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verificați Pod-ul, puneți-l pe piele, după care confirmați că este lipit."
+            "value" : "Verificați pompa, lipiți-o pe piele, după care confirmați că este atașată."
           }
         },
         "ru" : {
@@ -11273,7 +11291,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Checking..."
           }
         },
@@ -12001,7 +12019,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mementouri de confimare"
+            "value" : "Mementouri de confirmare"
           }
         },
         "ru" : {
@@ -12506,7 +12524,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Configuration"
           }
         },
@@ -12518,7 +12536,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Configuration"
           }
         },
@@ -12548,7 +12566,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Configuration"
           }
         },
@@ -12562,6 +12580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajustes"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurare"
           }
         },
         "ru" : {
@@ -12938,13 +12962,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Continue"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Continue"
           }
         },
@@ -12982,6 +13006,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continuar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuați"
           }
         },
         "ru" : {
@@ -13206,7 +13236,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Critical Alerts"
           }
         },
@@ -13218,7 +13248,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Critical Alerts"
           }
         },
@@ -13266,7 +13296,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Critical Alerts"
           }
         },
@@ -14000,7 +14030,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dezactivează Pod"
+            "value" : "Dezactivează pompă"
           }
         },
         "ru" : {
@@ -15125,7 +15155,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Done"
           }
         },
@@ -15139,6 +15169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fine"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferdig"
           }
         },
         "nb-NO" : {
@@ -15155,7 +15191,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Done"
           }
         },
@@ -15169,6 +15205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gata"
           }
         },
         "ru" : {
@@ -15256,13 +15298,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Empty reservoir"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Empty reservoir"
           }
         },
@@ -15300,6 +15342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reservatório vazio"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rezervor gol"
           }
         },
         "ru" : {
@@ -15941,7 +15989,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Error"
           }
         },
@@ -16417,13 +16465,13 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
         "da" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
@@ -16435,13 +16483,13 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
@@ -16453,7 +16501,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
@@ -16489,7 +16537,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
@@ -16501,7 +16549,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
@@ -16513,13 +16561,13 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
         "sk" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
@@ -16531,7 +16579,7 @@
         },
         "tr" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         },
@@ -16549,7 +16597,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Expiration reminder"
           }
         }
@@ -17168,7 +17216,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running"
           }
         },
@@ -17180,7 +17228,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running"
           }
         },
@@ -17228,7 +17276,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running"
           }
         },
@@ -17276,7 +17324,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running"
           }
         }
@@ -17287,13 +17335,13 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
         "da" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
@@ -17305,25 +17353,25 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
@@ -17359,7 +17407,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
@@ -17371,7 +17419,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
@@ -17383,13 +17431,13 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
         "sk" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
@@ -17401,7 +17449,7 @@
         },
         "tr" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         },
@@ -17419,7 +17467,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running while suspended"
           }
         }
@@ -17460,7 +17508,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running with temp basal"
           }
         },
@@ -17472,7 +17520,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running with temp basal"
           }
         },
@@ -17520,7 +17568,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running with temp basal"
           }
         },
@@ -17568,7 +17616,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Extended bolus running with temp basal"
           }
         }
@@ -18616,7 +18664,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Failed to Resume Insulin Delivery"
           }
         },
@@ -18664,7 +18712,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Failed to Resume Insulin Delivery"
           }
         },
@@ -18814,7 +18862,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nu s-a reușit setarei timpului de pe pompă"
+            "value" : "Nu s-a reușit setarea timpului de pe pompă"
           }
         },
         "ru" : {
@@ -18866,7 +18914,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Failed to Suspend Insulin Delivery"
           }
         },
@@ -18890,7 +18938,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Failed to Suspend Insulin Delivery"
           }
         },
@@ -18902,7 +18950,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Failed to Suspend Insulin Delivery"
           }
         },
@@ -18950,7 +18998,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Failed to Suspend Insulin Delivery"
           }
         },
@@ -19529,7 +19577,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nu s-a reușit actualizarea preferinței în ceea ce privește modul de pompă silențios."
+            "value" : "Nu s-a reușit actualizarea preferinței în ceea ce privește modul de pompă silențioasă."
           }
         },
         "ru" : {
@@ -19623,7 +19671,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Fault event occurred"
           }
         },
@@ -19671,7 +19719,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Fault event occurred"
           }
         },
@@ -19719,7 +19767,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Fault event occurred"
           }
         }
@@ -19821,7 +19869,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Umpleți o pompă nou cu insulină U-100  (nu înlăturați capacul albastru al acului de pe pompă)."
+            "value" : "Umpleți o pompă nouă cu insulină U-100  (nu înlăturați capacul albastru al acului de pe pompă)."
           }
         },
         "ru" : {
@@ -20107,7 +20155,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Finalizați deactivarea"
+            "value" : "Finalizați dezactivarea"
           }
         },
         "ru" : {
@@ -20494,7 +20542,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Finish setup reminder"
           }
         },
@@ -20506,7 +20554,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Finish setup reminder"
           }
         },
@@ -20554,7 +20602,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Finish setup reminder"
           }
         },
@@ -20602,7 +20650,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Finish setup reminder"
           }
         }
@@ -20758,7 +20806,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Firmware Version"
+            "value" : "固件版本"
           }
         }
       }
@@ -21300,7 +21348,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dacă anulați configurarea Pod-ului, Pod-ul actual va fi dezactivat și va fi inutilizabil."
+            "value" : "Dacă anulați configurarea pompei, pompa actuală va fi dezactivată și va fi inutilizabilă."
           }
         },
         "ru" : {
@@ -22085,7 +22133,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Inserting cannula"
           }
         },
@@ -22127,7 +22175,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Inserting cannula"
           }
         },
@@ -22175,7 +22223,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Inserting cannula"
           }
         },
@@ -22223,7 +22271,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Inserting cannula"
           }
         }
@@ -22556,7 +22604,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin\nSuspended"
           }
         },
@@ -22575,7 +22623,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Insulintilførsel utsatt"
+            "value" : "Insulintilførsel pauset"
           }
         },
         "nb-NO" : {
@@ -22687,7 +22735,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Delivery"
           }
         },
@@ -22699,13 +22747,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Delivery"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Delivery"
           }
         },
@@ -22729,7 +22777,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Delivery"
           }
         },
@@ -22741,8 +22789,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Delivery"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Administrarea insulinei"
           }
         },
         "ru" : {
@@ -22891,7 +22945,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Administrarea de insulină s-a oprit. Schimbați Pod-ul acum."
+            "value" : "Administrarea de insulină s-a oprit. Schimbați pompa acum."
           }
         },
         "ru" : {
@@ -23110,7 +23164,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Remaining"
           }
         },
@@ -23122,13 +23176,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Remaining"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Remaining"
           }
         },
@@ -23152,7 +23206,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Remaining"
           }
         },
@@ -23164,8 +23218,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Remaining"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulină rămasă"
           }
         },
         "ru" : {
@@ -23217,7 +23277,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Suspended"
           }
         },
@@ -23241,7 +23301,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Suspended"
           }
         },
@@ -23253,13 +23313,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Suspended"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Suspended"
           }
         },
@@ -23283,7 +23343,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Suspended"
           }
         },
@@ -23295,8 +23355,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Suspended"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Administrarea insulinei suspendată"
           }
         },
         "ru" : {
@@ -23337,7 +23403,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Suspended"
           }
         }
@@ -23372,7 +23438,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Type"
           }
         },
@@ -23384,13 +23450,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Type"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Type"
           }
         },
@@ -23414,7 +23480,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Insulin Type"
           }
         },
@@ -23428,6 +23494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tipo de Insulina"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tip de insulină"
           }
         },
         "ru" : {
@@ -24218,7 +24290,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Invalid address: (%1$@)"
           }
         },
@@ -24254,7 +24326,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Invalid address: (%1$@)"
           }
         },
@@ -24302,7 +24374,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Invalid address: (%1$@)"
           }
         },
@@ -24350,7 +24422,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Invalid address: (%1$@)"
           }
         }
@@ -24361,7 +24433,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Invalid CRC"
           }
         },
@@ -24397,7 +24469,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Invalid CRC"
           }
         },
@@ -24445,7 +24517,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Invalid CRC"
           }
         },
@@ -24493,7 +24565,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Invalid CRC"
           }
         }
@@ -25520,7 +25592,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Low reservoir"
           }
         },
@@ -25556,7 +25628,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Low reservoir"
           }
         },
@@ -25604,7 +25676,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Low reservoir"
           }
         },
@@ -25652,8 +25724,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Low reservoir"
+            "state" : "translated",
+            "value" : "低药量"
           }
         }
       }
@@ -27030,7 +27102,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Memory initialized"
           }
         },
@@ -27078,7 +27150,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Memory initialized"
           }
         },
@@ -27126,7 +27198,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Memory initialized"
           }
         }
@@ -28335,7 +28407,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No"
           }
         },
@@ -28365,7 +28437,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No"
           }
         },
@@ -28377,8 +28449,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu"
           }
         },
         "ru" : {
@@ -28401,7 +28479,7 @@
         },
         "tr" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No"
           }
         },
@@ -28419,7 +28497,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No"
           }
         }
@@ -28430,7 +28508,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No\nDelivery"
           }
         },
@@ -28454,7 +28532,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No\nDelivery"
           }
         },
@@ -28466,7 +28544,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No\nDelivery"
           }
         },
@@ -28514,7 +28592,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No\nDelivery"
           }
         },
@@ -28532,7 +28610,7 @@
         },
         "sk" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No\nDelivery"
           }
         },
@@ -28562,7 +28640,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No\nDelivery"
           }
         }
@@ -28816,7 +28894,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nu se folosesc mementouri de confimare."
+            "value" : "Nu se folosesc mementouri de confirmare."
           }
         },
         "ru" : {
@@ -28904,7 +28982,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No faults"
           }
         },
@@ -28952,7 +29030,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No faults"
           }
         },
@@ -29000,7 +29078,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No faults"
           }
         }
@@ -29257,7 +29335,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Niciuo pompă"
+            "value" : "Nicio pompă"
           }
         },
         "ru" : {
@@ -30222,7 +30300,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No, Keep Pump As Is"
           }
         },
@@ -30234,13 +30312,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No, Keep Pump As Is"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No, Keep Pump As Is"
           }
         },
@@ -30264,7 +30342,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No, Keep Pump As Is"
           }
         },
@@ -30276,8 +30354,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No, Keep Pump As Is"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu, păstrați pompa așa cum este"
           }
         },
         "ru" : {
@@ -30318,7 +30402,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "No, Keep Pump As Is"
           }
         }
@@ -30329,7 +30413,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Normal"
           }
         },
@@ -30569,7 +30653,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Modul normal de funcționare, în care semnalele acustice ale pompei sunt utilizate pentru toate alertele podului și atunci când sunt activate notificările de confirmare."
+            "value" : "Modul normal de funcționare, în care semnalele acustice ale pompei sunt utilizate pentru toate alertele pompei și atunci când sunt activate notificările de confirmare."
           }
         },
         "ru" : {
@@ -30657,7 +30741,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not enough data"
           }
         },
@@ -30705,7 +30789,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not enough data"
           }
         },
@@ -30764,31 +30848,31 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
         "da" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
         "de" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
         "es" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
@@ -30800,7 +30884,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
@@ -30836,7 +30920,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
@@ -30848,19 +30932,19 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
         "sk" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
@@ -30872,7 +30956,7 @@
         },
         "tr" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         },
@@ -30890,7 +30974,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Not used"
           }
         }
@@ -30931,7 +31015,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Notification Settings"
           }
         },
@@ -30943,7 +31027,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Notification Settings"
           }
         },
@@ -30991,7 +31075,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Notification Settings"
           }
         },
@@ -31778,7 +31862,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "好的"
+            "value" : "OK"
           }
         }
       }
@@ -32236,7 +32320,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "oneNotUsed"
           }
         },
@@ -32272,7 +32356,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "oneNotUsed"
           }
         },
@@ -32320,7 +32404,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "oneNotUsed"
           }
         },
@@ -32368,7 +32452,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "oneNotUsed"
           }
         }
@@ -32850,7 +32934,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Pairing completed"
           }
         },
@@ -32862,7 +32946,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Pairing completed"
           }
         },
@@ -32910,7 +32994,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Pairing completed"
           }
         },
@@ -33404,7 +33488,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Parsing Error: %1$@ in (%2$@)"
           }
         },
@@ -33428,7 +33512,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Parsing Error: %1$@ in (%2$@)"
           }
         },
@@ -33440,7 +33524,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Parsing Error: %1$@ in (%2$@)"
           }
         },
@@ -33488,7 +33572,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Parsing Error: %1$@ in (%2$@)"
           }
         },
@@ -33536,7 +33620,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Parsing Error: %1$@ in (%2$@)"
           }
         }
@@ -35801,7 +35885,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vă rugăm să repoziționați iPhone-ul mai aproape de Pod"
+            "value" : "Vă rugăm să repoziționați iPhone-ul mai aproape de pompă"
           }
         },
         "ru" : {
@@ -35944,7 +36028,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vă rugăm să utilizați un alt dispozitiv cu capabilități bluetooth"
+            "value" : "Vă rugăm să utilizați un alt dispozitiv cu capabilități Bluetooth"
           }
         },
         "ru" : {
@@ -40096,7 +40180,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pod Setup"
+            "value" : "泵设置"
           }
         }
       }
@@ -40119,7 +40203,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pod setup is not complete"
+            "value" : "Pod-Einrichtung ist nicht abgeschlossen"
           }
         },
         "es" : {
@@ -40441,7 +40525,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Pod suspended reminder"
           }
         },
@@ -40453,7 +40537,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Pod suspended reminder"
           }
         },
@@ -40501,7 +40585,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Pod suspended reminder"
           }
         },
@@ -41473,7 +41557,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Priming completed"
           }
         },
@@ -41521,7 +41605,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Priming completed"
           }
         },
@@ -44493,7 +44577,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Reminder initialized"
           }
         },
@@ -44535,7 +44619,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Reminder initialized"
           }
         },
@@ -44583,7 +44667,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Reminder initialized"
           }
         },
@@ -44733,7 +44817,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scoateți capacul albastru de ac de pe Pod și verificați canula. Apoi înlăturați eticheta de hârtie de pe spate."
+            "value" : "Scoateți capacul albastru de ac de pe pompă și verificați canula. Apoi înlăturați eticheta de hârtie de pe spate."
           }
         },
         "ru" : {
@@ -44952,7 +45036,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Remove Pump"
           }
         },
@@ -44964,13 +45048,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Remove Pump"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Remove Pump"
           }
         },
@@ -44994,7 +45078,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Remove Pump"
           }
         },
@@ -45006,8 +45090,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Remove Pump"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimină pompa"
           }
         },
         "ru" : {
@@ -45048,7 +45138,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Remove Pump"
           }
         }
@@ -45351,7 +45441,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Resume delivery"
           }
         },
@@ -45375,7 +45465,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Resume delivery"
           }
         },
@@ -45387,13 +45477,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Resume delivery"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Resume delivery"
           }
         },
@@ -45429,8 +45519,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Resume delivery"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reluați administrarea de insulină"
           }
         },
         "ru" : {
@@ -45471,7 +45567,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Resume delivery"
           }
         }
@@ -46418,7 +46514,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Save"
           }
         },
@@ -46462,6 +46558,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salvar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvează"
           }
         },
         "ru" : {
@@ -46662,7 +46764,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Scheduled basal"
           }
         },
@@ -46704,7 +46806,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Scheduled basal"
           }
         },
@@ -46752,7 +46854,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Scheduled basal"
           }
         },
@@ -46835,7 +46937,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Scheduled Basal"
           }
         },
@@ -46847,13 +46949,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Scheduled Basal"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Scheduled Basal"
           }
         },
@@ -46877,7 +46979,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Scheduled Basal"
           }
         },
@@ -46889,8 +46991,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Scheduled Basal"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bazală programată"
           }
         },
         "ru" : {
@@ -47188,7 +47296,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Selectați tipul de insulină pe care o veți utiliza în acest pod."
+            "value" : "Selectați tipul de insulină pe care o veți utiliza în această pompă."
           }
         },
         "ru" : {
@@ -47684,7 +47792,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Setup Complete"
           }
         },
@@ -47708,7 +47816,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Setup Complete"
           }
         },
@@ -47720,13 +47828,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Setup Complete"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Setup Complete"
           }
         },
@@ -47750,7 +47858,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Setup Complete"
           }
         },
@@ -47762,8 +47870,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Setup Complete"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurare finalizată"
           }
         },
         "ru" : {
@@ -47804,7 +47918,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Setup Complete"
           }
         }
@@ -47815,7 +47929,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Shutdown imminent"
           }
         },
@@ -47845,7 +47959,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Shutdown imminent"
           }
         },
@@ -47857,7 +47971,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Shutdown imminent"
           }
         },
@@ -47905,7 +48019,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Shutdown imminent"
           }
         },
@@ -48265,7 +48379,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Signal Loss"
+            "value" : "信号丢失"
           }
         }
       }
@@ -48431,7 +48545,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Stille Pod"
+            "value" : "Pod stummschalten"
           }
         },
         "es" : {
@@ -48795,7 +48909,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Redus la tăcere"
+            "value" : "Silențios"
           }
         },
         "ru" : {
@@ -50066,7 +50180,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Insulintilførsel utsatt"
+            "value" : "Pause insulintilførsel "
           }
         },
         "nb-NO" : {
@@ -50154,7 +50268,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspend time expired"
           }
         },
@@ -50184,7 +50298,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspend time expired"
           }
         },
@@ -50196,7 +50310,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspend time expired"
           }
         },
@@ -50244,7 +50358,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspend time expired"
           }
         },
@@ -50637,7 +50751,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspended At"
           }
         },
@@ -50649,7 +50763,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspended At"
           }
         },
@@ -50668,7 +50782,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Utsatt klokken"
+            "value" : "Pauset klokken"
           }
         },
         "nb-NO" : {
@@ -50697,7 +50811,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspended At"
           }
         },
@@ -50745,7 +50859,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspended At"
           }
         }
@@ -51664,7 +51778,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Temp Basal"
           }
         },
@@ -51688,7 +51802,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Temp Basal"
           }
         },
@@ -51700,13 +51814,13 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Temp Basal"
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Temp Basal"
           }
         },
@@ -51730,7 +51844,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Temp Basal"
           }
         },
@@ -51742,8 +51856,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Temp Basal"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bazală temporară"
           }
         },
         "ru" : {
@@ -51950,7 +52070,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Temp basal running"
           }
         },
@@ -52792,7 +52912,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Avertismentele de mai sus nu vor suna pe dispozitivul dvs. atunci când acesta este în modul Silențios sau Nu deranjați. Există și alte alerte critice ale pompei care vor suna pe dispozitivul dvs. chiar și atunci când este setat în modul Silențios sau Nu deranjați. \n\nPompa va utiliza, de asemenea, semnale sonore pentru toate notificările și alertele pompei, cu excepția cazului în care pompa este în mod silențios."
+            "value" : "Avertismentele de mai sus nu vor suna pe dispozitivul dumneavoastră atunci când acesta este în modul Silențios sau Nu deranjați. Există și alte alerte critice ale pompei care vor suna pe dispozitivul dumneavoastră chiar și atunci când este setat în modul Silențios sau Nu deranjați. \n\nPompa va utiliza, de asemenea, semnale sonore pentru toate notificările și alertele de pompă, cu excepția cazului în care pompa este în mod silențios."
           }
         },
         "ru" : {
@@ -53130,7 +53250,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The time on your pump is different from the current time. Your pump’s time controls your scheduled therapy settings. Scroll down to Pump Time row to review the time difference and configure your pump."
           }
         },
@@ -53154,7 +53274,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The time on your pump is different from the current time. Your pump’s time controls your scheduled therapy settings. Scroll down to Pump Time row to review the time difference and configure your pump."
           }
         },
@@ -53172,7 +53292,7 @@
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The time on your pump is different from the current time. Your pump’s time controls your scheduled therapy settings. Scroll down to Pump Time row to review the time difference and configure your pump."
           }
         },
@@ -53208,8 +53328,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The time on your pump is different from the current time. Your pump’s time controls your scheduled therapy settings. Scroll down to Pump Time row to review the time difference and configure your pump."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora din pompă este diferită de ora curentă. Ora din pompa dumneavoastră controlează setările de terapie programate. Derulați în jos la rândul Ora din pompă pentru a revizui diferența de oră și a configura pompa dumneavoastră."
           }
         },
         "ru" : {
@@ -53250,7 +53376,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "The time on your pump is different from the current time. Your pump’s time controls your scheduled therapy settings. Scroll down to Pump Time row to review the time difference and configure your pump."
           }
         }
@@ -53495,7 +53621,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A apărut o problemă la comunicarea cu podul. Dacă această problemă persistă, atingeți Renunțați la pod. Apoi puteți activa o nouă pompă."
+            "value" : "A apărut o problemă la comunicarea cu pompa. Dacă această problemă persistă, atingeți Renunțați la pompă. Apoi puteți activa o nouă pompă."
           }
         },
         "ru" : {
@@ -53690,7 +53816,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "threeNotUsed"
           }
         },
@@ -53726,7 +53852,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "threeNotUsed"
           }
         },
@@ -53774,7 +53900,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "threeNotUsed"
           }
         },
@@ -53822,7 +53948,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "threeNotUsed"
           }
         }
@@ -55241,7 +55367,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Porniți bluetooth"
+            "value" : "Porniți Bluetooth"
           }
         },
         "ru" : {
@@ -55293,7 +55419,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "twoNotUsed"
           }
         },
@@ -55329,7 +55455,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "twoNotUsed"
           }
         },
@@ -55377,7 +55503,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "twoNotUsed"
           }
         },
@@ -55425,7 +55551,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "twoNotUsed"
           }
         }
@@ -55460,7 +55586,7 @@
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "U/hr"
           }
         },
@@ -55472,7 +55598,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "U/hr"
           }
         },
@@ -55502,7 +55628,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "U/hr"
           }
         },
@@ -55514,8 +55640,14 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "U/hr"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "U/oră"
           }
         },
         "ru" : {
@@ -56437,7 +56569,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unexpected message sequence number"
           }
         },
@@ -56479,7 +56611,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unexpected message sequence number"
           }
         },
@@ -56527,7 +56659,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unexpected message sequence number"
           }
         },
@@ -56575,7 +56707,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unexpected message sequence number"
           }
         }
@@ -57456,7 +57588,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unknown pod fault %1$03d"
           }
         },
@@ -57553,7 +57685,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Defecțiune Pod neidentificată %1$03d"
+            "value" : "Defecțiune pompă neidentificată %1$03d"
           }
         },
         "ru" : {
@@ -57605,7 +57737,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unknown Value (%1$@) for type %2$@"
           }
         },
@@ -57647,7 +57779,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unknown Value (%1$@) for type %2$@"
           }
         },
@@ -57695,7 +57827,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unknown Value (%1$@) for type %2$@"
           }
         },
@@ -57743,7 +57875,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Unknown Value (%1$@) for type %2$@"
           }
         }
@@ -57754,7 +57886,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Validation failed: %1$@"
           }
         },
@@ -57796,7 +57928,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Validation failed: %1$@"
           }
         },
@@ -57844,7 +57976,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Validation failed: %1$@"
           }
         },
@@ -57892,7 +58024,7 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Validation failed: %1$@"
           }
         }
@@ -58344,7 +58476,7 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Waiting for pairing reminder"
           }
         },
@@ -58577,7 +58709,7 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Yes"
           }
         },
@@ -58727,7 +58859,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Da, dezactivați Pod-ul"
+            "value" : "Da, dezactivați pompa"
           }
         },
         "ru" : {
@@ -58769,7 +58901,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "是的，停用 Pod"
+            "value" : "是，停用 Pod"
           }
         }
       }
@@ -58912,7 +59044,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "是的，同步到当前时间"
+            "value" : "是，同步到当前时间"
           }
         }
       }
@@ -59442,7 +59574,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Veți începe acum procesul de configurare a memento-urilor, umplerea Pod-ului cu insulină, asocierea cu dispozitivul dumneavoastră și amplasarea acestuia pe corp."
+            "value" : "Veți începe acum procesul de configurare a memento-urilor, umplerea pompei cu insulină, asocierea cu dispozitivul dumneavoastră și amplasarea acestuia pe corp."
           }
         },
         "ru" : {
@@ -59484,7 +59616,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You will now begin the process of configuring your reminders, filling your Pod with insulin, pairing to your device and placing it on your body."
+            "value" : "你现在将开始以下流程：设置提醒、向 Pod 注入胰岛素、与设备完成配对，并将 Pod 佩戴到身体上"
           }
         }
       }
@@ -59877,7 +60009,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Este posibil ca Podul dvs. să administreze în continuare insulină.\nScoateți-l din corpul dumneavoastră, apoi atingeți \"Continuați\"."
+            "value" : "Este posibil ca pompa dumneavoastră să administreze în continuare insulină.\nScoateți-o de pe corpul dumneavoastră, apoi atingeți \"Continuați\"."
           }
         },
         "ru" : {
